@@ -13,7 +13,7 @@ Visually show data on cryptocurrency
 """)
 st.sidebar.header("User Input")
 image = Image.open(
-    "/Users/nikhilsanghi/Documents/Pycharm_Projects/Projects/pythonProject/CryptoCurrency/Images/CryptoDashboardPic.png")
+    "/Users/nikhilsanghi/Documents/Pycharm_Projects/CryptoCurrency/Images/CryptoDashboardPic.png")
 
 st.image(image, use_column_width=True)
 start, end, symbol = Utils.get_input()
