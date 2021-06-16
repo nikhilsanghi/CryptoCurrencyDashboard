@@ -23,14 +23,14 @@ st.image(image, use_column_width=True)
 # fetching the start_date, end_date and the symbol from user
 start, end, symbol = Utils.get_input()
 
-# depending upon the input porvided by the user, we will fetch the required data
+# depending upon the input provided by the user, we will fetch the required data
 df = Utils.get_data(symbol, start, end)
 
 # Fetching the cryptocurrency name from the abbreviated form
 crypto_name = Utils.get_crypto_name(symbol)
 
-#Creating a candlestick graph for deatail analysis on daily changes in the prices of currencies
-df = Utils.get_data(symbol, start, end)
+# Creating a candlestick graph for detail analysis on daily changes in the prices of currencies
+
 fig = go.Figure(
     data=[
         go.Candlestick(
@@ -42,7 +42,6 @@ fig = go.Figure(
         )
     ]
 )
-
 
 st.header("Data")
 st.write(df)
