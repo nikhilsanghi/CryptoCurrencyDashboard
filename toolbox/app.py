@@ -6,7 +6,7 @@ import Utils
 import plotly.graph_objects as go
 from PIL import Image
 
-#
+# This will add a homepage pic to the dasghboard
 st.write("""
 # Cryptocurrency Dashboard Application
 Visually show data on cryptocurrency
